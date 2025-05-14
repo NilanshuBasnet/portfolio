@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./Favicon.png" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Anek+Gurmukhi:wght@100..800&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Comfortaa:wght@300..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Nilanshu's Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body
+    class="min-h-screen text-slate-900 bg-gray-100"
+    style="font-family: 'Manrope', sans-serif"
+  >
+  <div class="w-full h-auto p-3">
+        <!-- Header -->
+        <div class="w-full flex items-center flex-wrap mb-3">
+        <!-- Profile Image -->
+        <div
+            class="rounded-full overflow-hidden w-15 h-15 sm:w-25 sm:h-25 hover:scale-120 transition-transform cursor-pointer"
+        >
+            <img class="" src="./assets/images/profile.jpg" alt="Profile Image" />
+        </div>
+        <div class="ml-3">
+            <p class="text-sm sm:text-m text-slate-500">👋 Hey there, I'm</p>
+            <h2 class="font-bold text-lg sm:text-xl bg-gradient-to-r from-[#de0f3f] to-[#b20e35] bg-clip-text text-transparent">Nilanshu Basnet</h2>
+        </div>
+        </div>
+
+
+        <h1 class="font-semibold mt-5 mb-3">About Me</h1>
+        <!-- About Me -->
+        <div
+        class="scroll-zoom opacity-0 flex flex-col md:flex-row max-w-full h-auto rounded-lg bg-gradient-to-br from-[#190B28] via-[#190B28] to-[#4e4eff] text-white"
+        >
+        <!-- Image Section -->
+        <div class="w-full sm:w-1/3 flex items-center justify-center">
+            <img
+            class="h-100 object-contain"
+            src="./assets/images/characterImage.png"
+            alt="About Image"
+            />
+        </div>
+
+        <!-- Text Section -->
+        <div class="w-full sm:w-2/3 p-5 flex flex-col justify-center items-center">
+            <p class="sm:text-2xl leading-relaxed">
+            Hi! I’m <b>Nilanshu Basnet</b> 👨‍💻 — a developer who enjoys crafting
+            digital products using JavaScript, React ⚛️, and Tailwind CSS 🎨. I
+            value clean design, efficiency, and the challenge of learning
+            something new every day 💡.
+            </p>
+        </div>
+        </div>
+
+        <h1 class="font-semibold mt-5 mb-3">Featured Projects</h1>
+
+        <!--Main Project Container-->
+        <div class="rounded-lg w-full h-auto flex flex-wrap gap-4 sm:gap-5 justify-between overflow-hidden pt-2">
+            <!--Main Project-->
+            <div class="h-[500px] w-full flex flex-col sm:flex-1 scroll-zoom opacity-0">
+                <div class="overflow-hidden rounded-xl h-[335px] transition-transform duration-300 transform hover:-translate-y-1">
+                    <img
+                        class="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
+                        src="./assets/images/movierecommend.png"
+                        alt="Movie Recommendation"
+                    />
+                </div>
+                <h1 class="text-center font-extrabold text-xl text-[#131414] mt-3 mb-2">AI Powered Movie Recommendation System</h1>
+                    <p class="text-center text-sm text-[#131414] mb-4">💡 Describe what you want, and this AI suggests movies 🎬 just for you.</p>
+                    <a href="https://movie-recommendation-coral-iota.vercel.app/" target="_blank" class="text-center rounded-lg px-2 py-4 bg-gradient-to-r from-[#de0f3f] to-[#b20e35] text-white w-1/2 mx-auto">View Project</a>
+                
+            </div>
+            <!--Other Projects-->
+            <div class="h-[500px] w-full flex flex-col gap-5 sm:flex-1 ">
+                <!--Project2-->
+                <a href="https://github.com/NilanshuBasnet/WeatherApp/blob/main/README.md" target="_blank">
+                <div class="scroll-zoom opacity-0 bg-[#131414] flex w-full h-[150px] rounded-lg overflow-hidden transition-transform duration-300 transform hover:-translate-y-1 cursor-pointer">
+                    <div class="w-2/3 flex flex-col justify-center items-center p-4">
+                        <h2 class=" font-bold text-white text-xl mb-2">Weather Application</h2>
+                        <p class="text-white text-xs">🌦️ A simple weather application that provides real-time 🌍 weather updates based on the city name 🏙️.</p>
+                    </div>
+                    
+                    <img class=" w-1/3 object-cover" src="./assets/images/weather.png" alt="Weather App"/>
+                </div></a>
+
+                <!--Project3-->
+                <a href="https://todo-list-eta-puce.vercel.app/" target="_blank">
+                <div class="scroll-zoom opacity-0 bg-[#131414] flex w-full h-[150px] rounded-lg overflow-hidden transition-transform duration-300 transform hover:-translate-y-1 cursor-pointer">
+                    <div class="w-2/3 flex flex-col justify-center items-center p-4">
+                        <h2 class=" font-bold text-white text-xl mb-2">To-Do List</h2>
+                        <p class="text-white text-xs">This To-Do List Web App allows users to ✅ create, 👀 view, and ❌ delete tasks in an interactive and user-friendly interface 🖥️.</p>
+                    </div>
+                    <img class=" w-1/3 object-cover" src="./assets/images/todo.png" alt="To-Do List"/>
+                </div></a>
+
+                <!--Project4-->
+                <a href="https://nilanshubasnet.github.io/OnlineCart/" target="_blank">
+                <div class="scroll-zoom opacity-0 bg-[#131414] flex w-full h-[150px] rounded-lg overflow-hidden transition-transform duration-300 transform hover:-translate-y-1 cursor-pointer">
+                    <div class="w-2/3 flex flex-col justify-center items-center p-4">
+                        <h2 class=" font-bold text-white text-xl mb-2">Ecommerce Cart</h2>
+                        <p class="text-white text-xs">🛒 A simple E-commerce Cart Page built with HTML, CSS, and JavaScript that lets users add products 🧺 to their cart and view the total price 💰 in real time.</p>
+                    </div>
+                    <img class=" w-1/3 object-cover" src="./assets/images/ecommerce.png" alt="Ecommerce Cart"/>
+                </div></a>
+
+            </div>
+
+        </div>
+
+        <h1 class="font-semibold mt-5 mb-3">Skills</h1>
+
+        <div class="flex flex-wrap gap-3 scroll-zoom opacity-0">
+            <div class="p-4 sm:p-10 flex flex-wrap justify-center gap-2 bg-white shadow-md rounded-lg sm:flex-1">
+        <p
+            class="border border-[#61DAFB] text-[#61DAFB] py-2 px-4 rounded-full text-sm font-medium hover:bg-[#de0f3f] hover:text-white hover:border-0 hover:scale-105 transition-transform cursor-pointer"
+        >
+            ⚛️ React
+        </p>
+        <p
+            class="border border-[#3C873A] text-[#3C873A] py-2 px-4 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-pointer hover:bg-[#de0f3f] hover:text-white hover:border-0"
+        >
+            🌿 Node.js
+        </p>
+        <p
+            class="border border-[#38BDF8] text-[#38BDF8] py-2 px-4 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-pointer hover:bg-[#de0f3f] hover:text-white hover:border-0"
+        >
+            💨 Tailwind
+        </p>
+        <p
+            class="border border-[#fce109] text-[#fce109] py-2 px-4 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-pointer hover:bg-[#de0f3f] hover:text-white hover:border-0"
+        >
+            🌐 HTML, CSS, JS
+        </p>
+        <p
+            class="border border-[#47A248] text-[#47A248] py-2 px-4 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-pointer hover:bg-[#de0f3f] hover:text-white hover:border-0"
+        >
+            🍃 MongoDB
+        </p>
+        <p
+            class="border border-[#0db7ed] text-[#0db7ed] py-2 px-4 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-pointer hover:bg-[#de0f3f] hover:text-white hover:border-0"
+        >
+            🐳 Docker
+        </p>
+        <p
+            class="border border-[#A259FF] text-[#A259FF] py-2 px-4 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-pointer hover:bg-[#de0f3f] hover:text-white hover:border-0"
+        >
+            🎨 Figma
+        </p>
+        <p
+            class="border border-[#3776AB] text-[#3776AB] py-2 px-4 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-pointer hover:bg-[#de0f3f] hover:text-white hover:border-0"
+        >
+            🐍 Python
+        </p>
+        <p
+            class="border border-[#007396] text-[#007396] py-2 px-4 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-pointer hover:bg-[#de0f3f] hover:text-white hover:border-0"
+        >
+            ☕ Java
+        </p>
+        <p
+            class="border border-[#FF9900] text-[#FF9900] py-2 px-4 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-pointer hover:bg-[#de0f3f] hover:text-white hover:border-0"
+        >
+            ☁️ AWS
+        </p>
+        <p
+            class="border border-[#5C4EE5] text-[#5C4EE5] py-2 px-4 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-pointer hover:bg-[#de0f3f] hover:text-white hover:border-0"
+        >
+            🔧 Terraform
+        </p>
+        </div>
+
+        <div
+        class="scroll-zoom opacity-0 w-full min-h-[150px] bg-gradient-to-r from-[#de0f3f] to-[#b20e35] rounded-lg p-3 flex items-center flex-col justify-center sm:flex-1"
+        >
+        <p class="font-bold text-base text-white sm:text-xl mb-3">
+            🚀 Explore more of my work on GitHub.
+        </p>
+        <hr />
+        <a href="https://github.com/NilanshuBasnet" target="_blank" rel="noopener noreferrer">
+        <button
+            class="bg-[#040B19] text-white font-bold py-2 px-4 rounded-xl ml-3 flex items-center gap-2 hover:scale-105 transition-transform cursor-pointer"
+        >
+            <!-- GitHub Logo -->
+            <svg
+            class="w-5 h-5 fill-current"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            >
+            <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.4.6.1.82-.26.82-.58v-2.02c-3.34.73-4.04-1.6-4.04-1.6-.54-1.36-1.32-1.72-1.32-1.72-1.1-.76.08-.74.08-.74 1.22.08 1.87 1.25 1.87 1.25 1.08 1.85 2.82 1.32 3.5 1 .1-.78.42-1.32.76-1.62-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0C17 4.98 18 5.3 18 5.3c.66 1.65.24 2.87.12 3.17.77.84 1.23 1.9 1.23 3.22 0 4.62-2.8 5.65-5.48 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.82.58A12 12 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+            />
+            </svg>
+            Go to Github
+        </button></a>
+        </div>
+        </div>
+
+        
+
+    </div>
+
+    <!-- Footer -->
+    <div class="scroll-zoom opacity-0 p-4 text-center text-sm text-gray-500 py-6 bg-[#131414] flex flex-wrap items-center justify-center sm:justify-between">
+    <img class="h-[100px]" src="./assets/images/footorLogo.png" alt="footerLogo" />
+      <p>Thanks for visiting! 👋 Let’s connect on 
+      <a
+        href="https://www.linkedin.com/in/nilanshubasnet/"
+        class="text-blue-500 hover:underline"
+        target="_blank"
+        >LinkedIn</a>.</p>
+        <p class="">&copy; 2025: Nilanshu Basnet</p>
+    </div>
+  </body>
+    <script src="./assets/js/script.js"></script>
+</html>

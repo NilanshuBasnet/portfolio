@@ -3,228 +3,233 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="image" href="./assets/images/profile.jpg" />
-    <link rel="preload" as="image" href="./assets/images/characterImage.png" />
-    <link rel="icon" href="./assets/images/Favicon.png" type="image/x-icon">
+    <title>Nilanshu - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="assets/Favicon.png">
     <link
-      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Anek+Gurmukhi:wght@100..800&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Comfortaa:wght@300..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Nilanshu's Portfolio</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body
-    class="min-h-screen text-slate-900 bg-gray-100"
-    style="font-family: 'Manrope', sans-serif"
-  >
-   <!-- Page Loader with Progress Bar -->
-    <div id="loader" class="fixed inset-0 flex flex-col items-center justify-center z-50 bg-[#131414]">
-        <img class="h-[150px] mb-4" src="./assets/images/footorLogo.png" alt="Loading" />
-        <div class="w-2/3 h-2 bg-gray-300 rounded-full overflow-hidden">
-            <div id="progress-bar" class="h-full bg-[#de0f3f] transition-all duration-200 ease-out" style="width: 0%;"></div>
+
+  <body class="bg-white text-gray-900">
+    <header class="flex justify-between items-center px-8 py-5 border-b border-gray-200 fade-in-up" style="animation-delay: 0.2s;">
+      <h1 class="text-2xl font-bold bg-gradient-to-r 
+           from-[#DC0F3F] via-[#B30E35] to-[#DC0F3F] 
+           text-transparent bg-clip-text 
+           animate-swap-colors">
+  NILANSHU BASNET
+</h1>
+
+      <div class="flex items-center space-x-3">
+        <span class="relative flex h-3 w-3">
+          <span
+            class="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping"
+          ></span>
+          <span
+            class="relative inline-flex rounded-full h-3 w-3 bg-green-500 animate-heartbeat"
+          ></span>
+        </span>
+        <span class="text-sm font-medium text-gray-700">Available for work</span>
+      </div>
+    </header>
+
+    <section class="bg-gray-50 text-center py-10 px-6 fade-in-up" style="animation-delay: 0.4s;">
+      <p class="uppercase text-xs tracking-widest text-gray-500 mb-3">
+        Welcome to Nilanshu's Portfolio
+      </p>
+      <h2 class="text-lg md:text-xl font-medium text-gray-800 leading-relaxed">
+    Build digital experiences 🏗️ that ignite
+    <span class="word-container">
+        <span class="changing-word text-red-600 font-semibold">innovation💡</span>
+        <span class="changing-word text-red-600 font-semibold">solutions 🛠️</span>
+        <span class="changing-word text-red-600 font-semibold">impact 🚀</span>
+    </span>
+    </h2>
+      </h2>
+    </section>
+
+    <main class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 px-6 py-10">
+      <div class="rounded-xl overflow-hidden shadow-sm fade-in-up hover-zoom" style="animation-delay: 0.6s;">
+        <img
+          src="assets/Portfolio1.jpg"
+          alt="Portfolio Image"
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <div class="flex flex-col justify-center fade-in-up" style="animation-delay: 0.8s;">
+        <div class="flex items-center space-x-2 text-sm text-gray-500 mb-2">
+            <span>About me</span>
         </div>
+
+        <h1 class="text-3xl font-bold mb-3">
+          What I Deliver: A Developer Profile
+        </h1>
+
+        <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+          I am a goal-oriented developer focused on architecting and delivering high-impact digital experiences that 
+          solve real user problems. I rely on a versatile toolkit including JavaScript, Python, React, and foundational 
+          AWS/Node.js knowledge to ensure application scalability and performance.
+        </p>
+
+        <div class="flex items-center space-x-3 text-sm font-medium text-gray-500">
+          <span class="text-red-600">Profile</span>
+          <span>•</span>
+          <span>10 sec read</span>
+        </div>
+      </div>
+    </main>
+
+    <div id="tech-skills-section" class="w-full flex items-center justify-center py-8" role="region" aria-labelledby="skills-heading">
+      <section class="container max-w-7xl mx-auto px-4 text-center">
+
+        <header class="mb-10">
+          <h1 id="skills-heading" class="fade-up text-xl md:text-2xl font-bold text-black mb-4 tracking-tight">
+            Technologies I'm Using
+          </h1>
+        </header>
+
+        <div class="grid grid-cols-4 sm:grid-cols-4 lg:grid-cols-8 gap-x-4 gap-y-12">
+
+          <div class="flex flex-col items-center justify-center p-2 group">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python Logo"
+                  class="fade-up tech-logo w-10 h-10 sm:w-12 sm:h-12 object-contain grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-300" />
+            <span class="fade-up mt-2 text-xs sm:text-sm font-medium text-black group-hover:text-red-600 transition-colors duration-300">Python</span>
+          </div>
+
+          <div class="flex flex-col items-center justify-center p-2 group">
+            <img src="https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg" alt="Tailwind Logo"
+                  class="fade-up tech-logo w-10 h-10 sm:w-12 sm:h-12 object-contain grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-300" />
+            <span class="fade-up mt-2 text-xs sm:text-sm font-medium text-black group-hover:text-red-600 transition-colors duration-300">Tailwind</span>
+          </div>
+
+          <div class="flex flex-col items-center justify-center p-2 group">
+            <img src="https://cdn-icons-png.freepik.com/512/3334/3334886.png?ga=GA1.1.1506103542.1760609809" alt="React Logo"
+                  class="fade-up tech-logo w-10 h-10 sm:w-12 sm:h-12 object-contain grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-300" />
+            <span class="fade-up mt-2 text-xs sm:text-sm font-medium text-black group-hover:text-red-600 transition-colors duration-300">React</span>
+          </div>
+
+          <div class="flex flex-col items-center justify-center p-2 group">
+            <img src="https://cdn-icons-png.freepik.com/512/5968/5968705.png?ga=GA1.1.1506103542.1760609809" alt="Figma Logo"
+                  class="fade-up tech-logo w-10 h-10 sm:w-12 sm:h-12 object-contain grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-300" />
+            <span class="fade-up mt-2 text-xs sm:text-sm font-medium text-black group-hover:text-red-600 transition-colors duration-300">Figma</span>
+          </div>
+
+          <div class="flex flex-col items-center justify-center p-2 group">
+            <img src="https://icon.icepanel.io/Technology/svg/HashiCorp-Terraform.svg" alt="Terraform Logo"
+                  class="fade-up tech-logo w-10 h-10 sm:w-12 sm:h-12 object-contain grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-300" />
+            <span class="fade-up mt-2 text-xs sm:text-sm font-medium text-black group-hover:text-red-600 transition-colors duration-300">Terraform</span>
+          </div>
+
+          <div class="flex flex-col items-center justify-center p-2 group">
+            <img src="https://cdn-icons-png.freepik.com/512/15484/15484303.png?ga=GA1.1.1506103542.1760609809" alt="Node.js Logo"
+                  class="fade-up tech-logo w-10 h-10 sm:w-12 sm:h-12 object-contain grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-300" />
+            <span class="fade-up mt-2 text-xs sm:text-sm font-medium text-black group-hover:text-red-600 transition-colors duration-300">Node.js</span>
+          </div>
+
+          <div class="flex flex-col items-center justify-center p-2 group">
+            <img src="https://icon.icepanel.io/Technology/svg/Git.svg" alt="Git Logo"
+                  class="fade-up tech-logo w-10 h-10 sm:w-12 sm:h-12 object-contain grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-300" />
+            <span class="fade-up mt-2 text-xs sm:text-sm font-medium text-black group-hover:text-red-600 transition-colors duration-300">Git</span>
+          </div>
+
+          <div class="flex flex-col items-center justify-center p-2 group">
+            <img src="https://icon.icepanel.io/Technology/svg/MongoDB.svg" alt="MongoDB Logo"
+                  class="fade-up tech-logo w-10 h-10 sm:w-12 sm:h-12 object-contain grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-300" />
+            <span class="fade-up mt-2 text-xs sm:text-sm font-medium text-black group-hover:text-red-600 transition-colors duration-300">MongoDB</span>
+          </div>
+
+        </div>
+      </section>
     </div>
-  <div id="main-content" class="w-full h-auto p-3 hidden">
-        <!-- Header -->
-        <div class="w-full flex items-center flex-wrap mb-3">
-        <!-- Profile Image -->
-        <div
-            class="rounded-full overflow-hidden w-15 h-15 sm:w-25 sm:h-25 hover:scale-120 transition-transform cursor-pointer"
-        >
-            <img class="" src="./assets/images/profile.jpg" alt="Profile Image" />
-        </div>
-        <div class="ml-3">
-            <p class="text-sm sm:text-m text-slate-500">👋 Hey there, I'm</p>
-            <h2 class="font-bold text-lg sm:text-xl bg-gradient-to-r from-[#de0f3f] to-[#b20e35] bg-clip-text text-transparent">Nilanshu Basnet</h2>
-        </div>
-        </div>
 
 
-        <h1 class="font-semibold mt-5 mb-3">About Me</h1>
-        <!-- About Me -->
-        <div
-        class="scroll-zoom opacity-0 flex flex-col md:flex-row max-w-full h-auto rounded-lg bg-gradient-to-br from-[#190B28] via-[#190B28] to-[#4e4eff] text-white"
-        >
-        <!-- Image Section -->
-        <div class="w-full sm:w-1/3 flex items-center justify-center">
-            <img
-            class="h-100 object-contain"
-            src="./assets/images/characterImage.png"
-            alt="About Image"
-            />
-        </div>
-
-        <!-- Text Section -->
-        <div class="w-full sm:w-2/3 p-5 flex flex-col justify-center items-center">
-            <p class="sm:text-2xl leading-relaxed">
-            Hi! I’m <b>Nilanshu Basnet</b> 👨‍💻 — a developer who enjoys crafting
-            digital products using JavaScript, React ⚛️, and Tailwind CSS 🎨. I
-            value clean design, efficiency, and the challenge of learning
-            something new every day 💡.
-            </p>
-        </div>
-        </div>
-
-        <h1 class="font-semibold mt-5 mb-3">Featured Projects</h1>
-
-        <!--Main Project Container-->
-        <div class="rounded-lg w-full h-auto flex flex-wrap gap-4 sm:gap-5 justify-between overflow-hidden pt-2">
-            <!--Main Project-->
-            <div class="h-[500px] w-full flex flex-col sm:flex-1 scroll-zoom opacity-0">
-                <div class="overflow-hidden rounded-xl h-[335px] transition-transform duration-300 transform hover:-translate-y-1">
-                    <img
-                        class="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
-                        src="./assets/images/movierecommend.png"
-                        alt="Movie Recommendation"
-                    />
-                </div>
-                <h1 class="text-center font-extrabold text-xl text-[#131414] mt-3 mb-2">AI Powered Movie Recommendation System</h1>
-                    <p class="text-center text-sm text-[#131414] mb-4">💡 Describe what you want, and this AI suggests movies 🎬 just for you.</p>
-                    <a href="https://movie-recommendation-coral-iota.vercel.app/" target="_blank" class="text-center rounded-lg px-2 py-4 bg-gradient-to-r from-[#de0f3f] to-[#b20e35] text-white w-1/2 mx-auto">View Project</a>
-                
-            </div>
-            <!--Other Projects-->
-            <div class="h-[500px] w-full flex flex-col gap-5 sm:flex-1 ">
-                <!--Project2-->
-                <a href="https://github.com/NilanshuBasnet/WeatherApp/blob/main/README.md" target="_blank">
-                <div class="scroll-zoom opacity-0 bg-[#131414] flex w-full h-[150px] rounded-lg overflow-hidden transition-transform duration-300 transform hover:-translate-y-1 cursor-pointer">
-                    <div class="w-2/3 flex flex-col justify-center items-center p-4">
-                        <h2 class=" font-bold text-white text-xl mb-2">Weather Application</h2>
-                        <p class="text-white text-xs">🌦️ A simple weather application that provides real-time 🌍 weather updates based on the city name 🏙️.</p>
-                    </div>
-                    
-                    <img class=" w-1/3 object-cover" src="./assets/images/weather.png" alt="Weather App"/>
-                </div></a>
-
-                <!--Project3-->
-                <a href="https://todo-list-eta-puce.vercel.app/" target="_blank">
-                <div class="scroll-zoom opacity-0 bg-[#131414] flex w-full h-[150px] rounded-lg overflow-hidden transition-transform duration-300 transform hover:-translate-y-1 cursor-pointer">
-                    <div class="w-2/3 flex flex-col justify-center items-center p-4">
-                        <h2 class=" font-bold text-white text-xl mb-2">To-Do List</h2>
-                        <p class="text-white text-xs">This To-Do List Web App allows users to ✅ create, 👀 view, and ❌ delete tasks in an interactive and user-friendly interface 🖥️.</p>
-                    </div>
-                    <img class=" w-1/3 object-cover" src="./assets/images/todo.png" alt="To-Do List"/>
-                </div></a>
-
-                <!--Project4-->
-                <a href="https://nilanshubasnet.github.io/OnlineCart/" target="_blank">
-                <div class="scroll-zoom opacity-0 bg-[#131414] flex w-full h-[150px] rounded-lg overflow-hidden transition-transform duration-300 transform hover:-translate-y-1 cursor-pointer">
-                    <div class="w-2/3 flex flex-col justify-center items-center p-4">
-                        <h2 class=" font-bold text-white text-xl mb-2">Ecommerce Cart</h2>
-                        <p class="text-white text-xs">🛒 A simple E-commerce Cart Page built with HTML, CSS, and JavaScript that lets users add products 🧺 to their cart and view the total price 💰 in real time.</p>
-                    </div>
-                    <img class=" w-1/3 object-cover" src="./assets/images/ecommerce.png" alt="Ecommerce Cart"/>
-                </div></a>
-
-            </div>
-
-        </div>
-
-        <h1 class="font-semibold mt-5 mb-3">Skills</h1>
-
-        <div class="flex flex-wrap gap-3 scroll-zoom opacity-0">
-            <div class="p-4 sm:p-10 flex flex-wrap justify-center gap-2 bg-white shadow-md rounded-lg sm:flex-1">
-        <p
-            class="border border-[#61DAFB] text-[#61DAFB] py-2 px-4 rounded-full text-sm font-medium hover:bg-[#de0f3f] hover:text-white hover:border-0 hover:scale-105 transition-transform cursor-pointer"
-        >
-            ⚛️ React
-        </p>
-        <p
-            class="border border-[#3C873A] text-[#3C873A] py-2 px-4 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-pointer hover:bg-[#de0f3f] hover:text-white hover:border-0"
-        >
-            🌿 Node.js
-        </p>
-        <p
-            class="border border-[#38BDF8] text-[#38BDF8] py-2 px-4 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-pointer hover:bg-[#de0f3f] hover:text-white hover:border-0"
-        >
-            💨 Tailwind
-        </p>
-        <p
-            class="border border-[#FFB433] text-[#FFB433] py-2 px-4 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-pointer hover:bg-[#de0f3f] hover:text-white hover:border-0"
-        >
-            🌐 HTML, CSS, JS
-        </p>
-        <p
-            class="border border-[#47A248] text-[#47A248] py-2 px-4 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-pointer hover:bg-[#de0f3f] hover:text-white hover:border-0"
-        >
-            🍃 MongoDB
-        </p>
-        <p
-            class="border border-[#0db7ed] text-[#0db7ed] py-2 px-4 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-pointer hover:bg-[#de0f3f] hover:text-white hover:border-0"
-        >
-            🐳 Docker
-        </p>
-        <p
-            class="border border-[#A259FF] text-[#A259FF] py-2 px-4 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-pointer hover:bg-[#de0f3f] hover:text-white hover:border-0"
-        >
-            🎨 Figma
-        </p>
-        <p
-            class="border border-[#3776AB] text-[#3776AB] py-2 px-4 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-pointer hover:bg-[#de0f3f] hover:text-white hover:border-0"
-        >
-            🐍 Python
-        </p>
-        <p
-            class="border border-[#007396] text-[#007396] py-2 px-4 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-pointer hover:bg-[#de0f3f] hover:text-white hover:border-0"
-        >
-            ☕ Java
-        </p>
-        <p
-            class="border border-[#FF9900] text-[#FF9900] py-2 px-4 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-pointer hover:bg-[#de0f3f] hover:text-white hover:border-0"
-        >
-            ☁️ AWS
-        </p>
-        <p
-            class="border border-[#5C4EE5] text-[#5C4EE5] py-2 px-4 rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-pointer hover:bg-[#de0f3f] hover:text-white hover:border-0"
-        >
-            🔧 Terraform
-        </p>
-        </div>
-
-        <div
-        class="scroll-zoom opacity-0 w-full min-h-[150px] bg-gradient-to-r from-[#de0f3f] to-[#b20e35] rounded-lg p-3 flex items-center flex-col justify-center sm:flex-1"
-        >
-        <p class="font-bold text-base text-white sm:text-xl mb-3">
-            🚀 Explore more of my work on GitHub.
-        </p>
-        <hr />
-        <a href="https://github.com/NilanshuBasnet" target="_blank" rel="noopener noreferrer">
-        <button
-            class="bg-[#040B19] text-white font-bold py-2 px-4 rounded-xl ml-3 flex items-center gap-2 hover:scale-105 transition-transform cursor-pointer"
-        >
-            <!-- GitHub Logo -->
-            <svg
-            class="w-5 h-5 fill-current"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-            >
-            <path
-                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.4.6.1.82-.26.82-.58v-2.02c-3.34.73-4.04-1.6-4.04-1.6-.54-1.36-1.32-1.72-1.32-1.72-1.1-.76.08-.74.08-.74 1.22.08 1.87 1.25 1.87 1.25 1.08 1.85 2.82 1.32 3.5 1 .1-.78.42-1.32.76-1.62-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0C17 4.98 18 5.3 18 5.3c.66 1.65.24 2.87.12 3.17.77.84 1.23 1.9 1.23 3.22 0 4.62-2.8 5.65-5.48 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.82.58A12 12 0 0 0 24 12c0-6.63-5.37-12-12-12z"
-            />
+    <section class="max-w-6xl mx-auto px-6 py-10 fade-in-up" style="animation-delay: 1.2s;">
+      <header class="flex justify-between items-center mb-6">
+        <h1 class="text-xl md:text-2xl font-bold">Featured Projects</h1>
+        <div class="flex space-x-2">
+          <button id="prev-button" class="p-3 bg-gray-200 text-gray-700 rounded-full shadow-lg hover:bg-gray-300 transition-colors disabled:opacity-30" disabled>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
             </svg>
-            Go to Github
-        </button></a>
+          </button>
+          <button id="next-button" class="p-3 bg-gray-200 text-gray-700 rounded-full shadow-lg hover:bg-gray-300 transition-colors disabled:opacity-30">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg>
+          </button>
         </div>
-        </div>
+      </header>
 
-        
+      <div class="overflow-x-hidden">
+        <div id="carousel-track" class="flex space-x-6 pb-4 overflow-x-auto scroll-smooth hide-scrollbar">
+          </div>
+      </div>
+    </section>
 
+    <div class="bg-gradient-to-r from-[#DC0F3F] to-[#B30E35] rounded-xl p-8 md:p-12 text-white max-w-screen-xl mx-auto w-full mb-12">
+      <div class="flex justify-between items-center flex-wrap">
+          
+          <div class="max-w-2xl pr-4 mb-6 md:mb-0">
+              <h1 class="text-4xl font-bold leading-tight mb-2">
+                  Let's Build Together<br>
+                  Your Next Project Starts Here
+              </h1>
+              <p class="text-sm opacity-90 leading-relaxed mt-4">
+                  Ready to turn ideas into code? Whether you have a question, a proposal, or just want to connect, I'm always open to new conversations.
+              </p>
+          </div>
+
+          <div class="flex-shrink-0">
+              <a href="mailto:your.email@example.com?subject=Project Inquiry" 
+                class="flex items-center space-x-2 
+                       bg-[#040B19] text-white 
+                       font-semibold py-3 px-6 rounded-full 
+                       shadow-lg hover:shadow-xl 
+                       transition-all duration-300 ease-in-out 
+                       hover:scale-105 hover:bg-opacity-90
+                       whitespace-nowrap">
+                  <span class="text-lg">✉️</span> 
+                  <span>Send Me an Email</span>
+              </a>
+          </div>
+
+      </div>
     </div>
 
-    <!-- Footer -->
-    <div class="scroll-zoom opacity-0 p-4 text-center text-sm text-gray-500 py-6 bg-[#131414] flex flex-wrap items-center justify-center sm:justify-between">
-    <img class="h-[100px]" src="./assets/images/footorLogo.png" alt="footerLogo" />
-      <p>Thanks for visiting! 👋 Let’s connect on 
-      <a
-        href="https://www.linkedin.com/in/nilanshubasnet/"
-        class="text-blue-500 hover:underline"
-        target="_blank"
-        >LinkedIn</a>.</p>
-        <p class="">&copy; 2025: Nilanshu Basnet</p>
+    <div class="w-full mt-10 p-6 bg-white text-gray-600 border-t border-gray-200">
+      <div class="flex flex-col md:flex-row justify-center items-center max-w-screen-xl mx-auto">
+          
+          <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
+              <p class="text-sm">
+                  &copy; <span id="current-year"></span> 
+                  <span class="text-[#DC0F3F] font-semibold">Nilanshu Basnet</span>. 
+                  All Rights Reserved.
+              </p>
+
+              <div class="flex space-x-4 text-xl">
+                  <a href="https://github.com/NilanshuBasnet" target="_blank" 
+                    class="hover:text-[#DC0F3F] transition duration-300" 
+                    aria-label="GitHub Profile">
+                      <span class="hover:text-[#DC0F3F] transition duration-300">
+                          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="hover:scale-105 w-5 h-5 inline-block">
+                      </span>
+                  </a>
+                  
+                  <a href="https://www.linkedin.com/in/nilanshubasnet/" target="_blank" 
+                    class="hover:text-[#DC0F3F] transition duration-300" 
+                    aria-label="LinkedIn Profile">
+                      <span class="hover:text-[#DC0F3F] transition duration-300">
+                          <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" class="hover:scale-105 w-5 h-5 inline-block">
+                      </span>
+                  </a>
+              </div>
+          </div>
+      </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
-    <script src="./assets/js/script.js"></script>
 </html>

@@ -3,7 +3,7 @@
 // Array of project objects containing data to populate the carousel cards
 const projectsData = [
   { id: 1, title: "AI Movie Recommendation", category: "Web App", techTag: "Gemini + Tmdb API", status: "Live Site", imagePlaceholder: "assets/MovieMatePoster.png", link: "https://movie-recommendation-coral-iota.vercel.app/" },
-  { id: 2, title: "Weather App", category: "Webpage", techTag: "Javascript", status: "Github Project", imagePlaceholder: "assets/WeatherApp.png", link: "https://github.com/NilanshuBasnet/WeatherApp"},
+  { id: 2, title: "Weather App", category: "Webpage", techTag: "Javascript", status: "Github Project", imagePlaceholder: "assets/weatherApp.png", link: "https://github.com/NilanshuBasnet/WeatherApp"},
   { id: 3, title: "Memory Game", category: "Webpage", techTag: "React", status: "Game", imagePlaceholder: "assets/memory.png", link: "https://github.com/NilanshuBasnet/memoryGame" },
   { id: 4, title: "To-Do List", category: "Storage", techTag: "Javascript / HTML", status: "Live Site", imagePlaceholder: "assets/todo.png", link: "https://todo-list-eta-puce.vercel.app/"},
   { id: 5, title: "Personal Portfolio", category: "Portfolio", techTag: "Gemini + ChatGPT", status: "This Site", imagePlaceholder: "assets/portfolioWebsite.png", link: "https://nilanshubasnet.com" }
@@ -97,4 +97,5 @@ document.getElementById('current-year').textContent = new Date().getFullYear();
 
         // Start the continuous animation loop
         setInterval(showNextWord, animationDuration);
+
     });

@@ -1,0 +1,113 @@
+/* Sets the default font for the entire body */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* --- Keyframe Animations --- */
+
+/* Heartbeat animation for the live status indicator */
+@keyframes heartbeat {
+  /* Start and end state: normal scale and full opacity */
+  0%, 100% { transform: scale(1); opacity: 1; }
+  /* Midpoint scale-up for the "beat" effect, slightly reduced opacity */
+  25% { transform: scale(1.3); opacity: 0.9; }
+  /* Return to normal state */
+  50% { transform: scale(1); opacity: 1; }
+  /* Second beat */
+  75% { transform: scale(1.3); opacity: 0.9; }
+}
+/* Class to apply the heartbeat animation */
+.animate-heartbeat {
+  animation: heartbeat 1.5s infinite;
+}
+
+/* Fade-in and move-up animation for sequential element loading */
+@keyframes fadeInUp {
+  /* Initial state: invisible and slightly below final position */
+  0% { opacity: 0; transform: translateY(20px); }
+  /* Final state: fully visible and in original position */
+  100% { opacity: 1; transform: translateY(0); }
+}
+/* Class to apply the fade-in-up animation */
+.fade-in-up {
+  /* Applies the animation over 1 second, with a smooth ease, and keeps the final state */
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Image hover zoom effect */
+.hover-zoom:hover {
+  /* Scales the element up by 5% on hover */
+  transform: scale(1.05);
+  /* Smooth transition over 0.5 seconds */
+  transition: transform 0.5s ease;
+}
+
+/* --- Scrollbar Hiding Utility --- */
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.hide-scrollbar::-webkit-scrollbar { 
+  display: none; 
+}
+/* Hide scrollbar for IE and Edge */
+.hide-scrollbar { 
+  -ms-overflow-style: none; 
+  /* Hide scrollbar for Firefox */
+  scrollbar-width: none; 
+}
+
+
+/* 1. Revised CSS for Positioning and Spacing */
+
+.word-container {
+    display: inline-block;
+    position: relative;
+    
+    /* FIX 1: Set a min-width based on the longest word ("innovation💡" is the longest) */
+    /* This ensures the static text ("ignite") doesn't jump closer to the static text that follows. */
+    min-width: 150px; 
+    
+    /* FIX 2: Set the height/line-height to match the parent <h2> */
+    /* This ensures vertical alignment with the static text. */
+    height: 1em; /* Matches the text size */
+    line-height: inherit; /* Inherits the line height from the <h2> */
+    
+    /* Ensure the container is aligned correctly on the text baseline */
+    vertical-align: top; /* or middle, depending on the font/browser */
+}
+
+.changing-word {
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.7s ease-in-out;
+    
+    /* FIX 3: Reset the top/left position to 0 */
+    /* This ensures the word starts exactly where the container starts. */
+    top: 0;
+    left: 0;
+    
+    /* Ensure the words within the container also inherit line-height/alignment */
+    line-height: inherit;
+    white-space: nowrap; /* Prevents long words from wrapping within the small container */
+}
+
+.changing-word.active {
+    opacity: 1;
+}
+
+
+/* 2. Gradient Animation for Header Name */
+/* 1. Define the Keyframes */
+@keyframes swap-gradient {
+  0% {
+    background-position: 0% center; /* Show the first half: [DC0F3F] to [B30E35] */
+  }
+  100% {
+    background-position: 100% center; /* Show the second half: [B30E35] back to [DC0F3F] */
+  }
+}
+
+/* 2. Create a utility class for the animation */
+.animate-swap-colors {
+  background-size: 200% auto; /* Make the gradient twice as wide */
+  animation: swap-gradient 4s linear infinite; /* 4 seconds duration, continuous linear movement */
+}
